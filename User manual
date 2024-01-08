@@ -1,0 +1,67 @@
+User manual for leafylife.com
+• Firstly please make sure all the files are properly downloaded.
+• Paste the project folder in htdocs in xampp
+• Start the apache web server and mysql server
+• For database please go to PHPMYADMIN and create the following Database
+CREATE DATABASE USERS
+• Create the following tables inside users database
+CREATE TABLE `user` (
+`Name` varchar(250) NOT NULL,
+`Email` varchar(250) NOT NULL,
+`Password` varchar(250) NOT NULL,
+`reset_token` varchar(259) DEFAULT NULL,
+`reset_token_expires_at` datetime(6) DEFAULT NULL,
+`card_number` varchar(12) DEFAULT NULL,
+`expiry_date` date DEFAULT NULL,
+`cvv` int(3) DEFAULT NULL,
+PRIMARY KEY (`Email`)
+)
+CREATE TABLE `orders` (
+`order_id` int(11) NOT NULL AUTO_INCREMENT,
+`email` varchar(255) NOT NULL,
+`product_name` varchar(255) NOT NULL,
+`quantity` int(100) NOT NULL,
+`total_amount` decimal(10,2) NOT NULL,
+`status` varchar(255) NOT NULL DEFAULT 'Pending',
+`order_date` timestamp NULL DEFAULT current_timestamp(),
+`product_image` varchar(255) NOT NULL,
+PRIMARY KEY (`order_id`)
+)
+CREATE TABLE `cart` (
+`id` int(6) unsigned NOT NULL AUTO_INCREMENT,
+`email` varchar(250) NOT NULL,
+`product_name` varchar(250) NOT NULL,
+`product_image` varchar(250) NOT NULL,
+`product_price` decimal(10,2) NOT NULL,
+`quantity` int(30) NOT NULL,
+PRIMARY KEY (`id`)
+)
+• After this you are ready to start the project
+• Type localhost/projectname in chrome
+• You will be directed to index.php which is the home screen of this website
+• When you scroll down you will notice navbar appearing.
+• You can sign in now or can do it later from any webpage with navbar
+• If you decide to sign in you will be taken to login window where you can enter the
+mentioned details if you have an account.
+• If not don’t worry you can go to register and register yourself.
+• If you forgot your password you can try resetting your password in forgot password
+menu.
+• There are multiple web pages in the website you can explore things that you like.
+• If you decide to go to food webpage you will see a green icon on bottom right corner
+that is a chatbot. You can ask it anything like what is the weather today.
+• Then furthur down after scrolling you will see the items.
+• If you click on an item you can see its description and add it to cart.
+• There is a search box you can search for an item and it will be displayed in the section.
+• You can also filter items by clicking on 3 buttons you see
+• When you hover over leafylife logo you will see the nav items being displayed
+• Now in about section you can read all the ingo about company
+• In fashion you will notice all the clothing items.
+• Now when you click on card you will see the items that you added to cart
+• After clicking on proceed to checkout you will be taken to checkout window.
+• Now when you see your total and products you can click on the button you see at the
+bottom which will take you to payment.
+• At this point please check your mailbox you might have received a mail with card details
+• Enter the detaild in form and wallah the order is placed
+• You can view the orders by hovering over your name in navbar you can cancel them as
+well.
+That was all rest exlore smuch as you can
