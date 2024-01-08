@@ -1,0 +1,518 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Dancingscript';
+    src: url('fonts/DancingScript-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'ephesis';
+    src: url('fonts/Ephesis-Regular.ttf');
+}
+body {
+    background-color: #12171B;
+}
+
+/* navbar code for food page */
+
+
+.navbar-food {
+    background-color: #F4F4DB;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    height: 8vh;
+    width: 100vw;
+    opacity: 0.7;
+    color: black;
+    text-decoration: none;
+}
+
+.Brandlogo-food {
+    width: 400px;
+    font-family: Dancingscript;
+    margin-left: 40px;
+    font-size: 36px;
+    color: black;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items-food {
+    width: 700px;
+    color: black;
+    margin-left: 50px;
+}
+
+.items-nav-food {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 17px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* section 1 starts here */
+
+.section1-food {
+    background: url('img/Foodbackground.png') no-repeat;
+    background-size: 100% 100%;
+    /* This property ensures the original size without cropping */
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.section2-food {
+    height: fit-content;
+    width: 100vw;
+    background-color: #12171B;
+    position: absolute;
+
+}
+
+.navsection2 {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+}
+
+/* Logo */
+#logo-foodtext {
+    font-family: Dancingscript;
+    font-size: 36px;
+    color: white;
+    opacity: 0;
+    text-decoration: none;
+    /* Ensuring no default underline for links */
+}
+
+#logo-food {
+    width: 13vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37px;
+
+}
+
+/* Navbar */
+.navbars2-food {
+
+    border-radius: 40px;
+    align-items: center;
+    display: flex;
+    height: 8vh;
+    width: 50vw;
+    opacity: 0;
+    visibility: hidden;
+    color: rgb(242, 238, 238);
+    text-decoration: none;
+
+}
+
+
+
+/* Styling for links */
+.nav-item-foods2 a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    /* Default link color */
+}
+
+.nav-item-foods2 a:visited {
+    text-decoration: none;
+    color: rgb(255, 249, 249);
+}
+
+/* Navigation items within Navbar */
+.nav-items-foods2 {
+    width: 700px;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}
+
+.items-nav-foods2 {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 17px;
+}
+
+/* Sign-in link styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.signinlinks2 a{
+    color: white;
+    text-decoration: none;
+
+}
+.signinlinks2{
+    width: 70px;
+}
+
+/* Dropdown button */
+.dropbtn {
+    
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtns2 {
+    
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtns2:visited{
+    color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    width: 20vw;
+    margin-left: 18vw;
+    opacity: 0;
+}
+
+#search-input {
+    height: 4vh;
+    width: 15vw;
+    border-radius: 40px;
+    text-align: center;
+    border-style: none;
+}
+
+.buttonss2-food {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    margin-top: 30px;
+}
+
+.buttonsfilters2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+    height: 8vh;
+}
+
+.btnfilters2 {
+    width: 8vw;
+    height: 5vh;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.filterlogo i {
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+    margin-left: 52vw;
+}
+
+.navandsearchs2 {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    opacity: 0;
+    top: 0%;
+    z-index: 1000;
+    background-color: #12171B;
+}
+
+/* items  */
+.fooditemscontainer {
+    overflow: hidden;
+    max-width: 90vw;
+    height: 1400px;
+    left: 5%;
+    border-style: none;
+    position: relative;
+    margin-top: 27%;
+    display: grid;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.items {
+
+
+    overflow: hidden;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+
+    border: .7px rgb(136, 139, 141) solid;
+    align-items: center;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.imageofitem {
+    width: 100%;
+    height: 80%;
+    border-radius: 0px 0px 17px 17px;
+}
+
+/* on click data */
+
+.itemdesc-and-quantity{
+    display: none;
+    margin-left: 15px;
+    width: 97%;
+    height: 53%;
+    text-align: left;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease-in;
+}
+.itemdesc {
+    overflow: hidden;
+    height: 60%;
+    width: 95%;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cart-and-wishlist {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.additemtocart {
+    background-color: rgb(183, 197, 232);
+    width: 48%;
+    height: 40px;
+    border-radius: 40px;
+    border-style: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#buynow {
+    background-color: rgb(183, 197, 232);
+    width: 48%;
+    height: 40px;
+    margin-left: 2px;
+    border-radius: 40px;
+    border-style: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#buynow:hover{
+    opacity: .9;
+}
+
+#additemtocart:hover {
+    opacity: .9;
+}
+
+.itemname-and-price {
+    width: 98%;
+    height: 20%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.itemname-and-price p {
+    width: 70%;
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+.itemname-and-price span {
+    position: relative;
+    font-size: 23px;
+    left: 10%;
+    font-weight: bold;
+}
+
+.quantity {
+    margin-top: 3px;
+    width: 60%;
+    height: 12%;
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quantity span {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #12171B;
+    cursor: pointer;
+    user-select: none;
+}
+
+.quantity span.num {
+    font-size: 17px;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+/* recipies  */
+
+.recipies{
+    overflow: hidden;
+    border-radius: 17px;
+    display: none;
+    flex-direction: column;
+    border: .7px rgb(136, 139, 141) solid;
+    align-items: center;
+    transition: opacity 0.7s ease-in-out;
+}
+
+
+/* enlarged items code */
+.enlarged-items {
+   
+    display: flex;
+    z-index: 1;
+    width: 300px;
+    height: 630px;
+    top: 10%;
+    left: 33vw;
+    background-color: #5d6a75;
+    
+    
+}
+
+.enlarged-imageofitem {
+    width: 100%;
+    height: 40%;
+    top: 0%;
+    border-radius: 0px 0px 17px 17px;
+}
+
+.enlarged-itemname-and-price {
+    width: 98%;
+    height: 5%;
+    margin-top: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .fooditemscontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fooditemscontainer {
+        grid-template-columns: 1fr;
+    }
+}
